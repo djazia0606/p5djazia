@@ -28,7 +28,7 @@ function displayProducts(products){
             <article>
               <img src="${product.imageUrl}" alt="Lorem ipsum dolor sit amet, Kanap name1">
               <h3 class="productName">${product.name}</h3>
-              <p class="productDescription">}${product.description}</p>
+              <p class="productDescription">${product.description}</p>
             </article>
             </a>
              `   
