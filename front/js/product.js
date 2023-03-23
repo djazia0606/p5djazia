@@ -21,10 +21,19 @@ console.log("hello")
     }
 })
 .then(function(data){
- displayProduct(data)
+displayProduct(data)
  console.log(data)
 })
 .catch(function(err){
     console.log(err)
 })
+function displayProduct(data){
+    const addTitle = document.querySelector('#title').innerHTML +=`
+         
+            <h3 id="product.name">${data.name}</h3>
+              
+             `   
+    
+}
+    
 
