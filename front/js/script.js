@@ -1,10 +1,5 @@
 
 
-/**
- * 1 recuperer les articles via l'API
- * 2 construire un html
- * 3 injecter html dans le dom=generer l'html
- * */
 
 fetch("http://localhost:3000/api/products")
 .then(function(reponse){
