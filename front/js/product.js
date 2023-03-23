@@ -29,11 +29,13 @@ displayProduct(data)
 })
 function displayProduct(data){
     const addTitle = document.querySelector('#title').innerHTML +=`
-         
-            <h3 id="product.name">${data.name}</h3>
-              
-             `   
-    
+         <h3 id="product.name">${data.name}</h3>
+        `   
+    const addPrice = document.querySelector('#price').innerHTML +=`
+         <p id="productPrice">${data.price}</p>
+        `   
+    const addDescription = document.querySelector('#description').innerHTML +=`
+         <p id="productDescription">${data.description}</p>
+        `   
 }
     
-
