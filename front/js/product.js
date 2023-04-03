@@ -22,7 +22,7 @@ console.log("hello")
 })
 .then(function(data){
 displayProduct(data)
- console.log(data)
+ //console.log(data)
 })
 .catch(function(err){
     console.log(err)
@@ -36,6 +36,20 @@ function displayProduct(data){
         `   
     const addDescription = document.querySelector('#description').innerHTML +=`
          <p id="productDescription">${data.description}</p>
-        `   
+    
+         `  
+    
+    let mesDivs = document.getElementsByClassName('item__img');
+    let maDiv = mesDivs[0];
+    let imageElement=document.createElement('img')
+    imageElement.src =data.imageUrl
+    imageElement.alt=data.altTxt
+    maDiv.appendChild(imageElement)
+
+
+
+    console.log(maDiv)
+
+
 }
     
