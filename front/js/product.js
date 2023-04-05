@@ -50,6 +50,22 @@ function displayProduct(data){
 
     console.log(maDiv)
 
+    
+    let addOption = document.querySelector('#colors')
+     
+    for (let i = 0; i=data.color.length; i++){
+        
+        
+    
+        const option = document.createElement('option'); 
+        option.value = [data.color]; 
+        option.textContent = color; 
+        addOption.appendChild(option); 
+        
+    }
+    
+
+    
 
 }
     
